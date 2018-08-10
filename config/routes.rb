@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  #refactor version
+  resources :posts, only: :show
+
+  # previous syntax
+  # get "posts/:id", to: "posts#show"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
